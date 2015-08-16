@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:background="@color/window_background">
+
+    <RelativeLayout
+        android:id="@+id/container_top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="8dp">
+
+        <View
+            android:id="@+id/line_top"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@color/darkGray"
+            android:layout_marginLeft="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@+id/circle_top"/>
+
+        <View
+            android:id="@+id/circle_top"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:padding="8dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/circle_line_top"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <View
+            android:id="@+id/line_bottom"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@color/darkGray"
+            android:layout_marginLeft="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toEndOf="@+id/circle_bottom"
+            android:layout_marginTop="12dp"/>
+
+        <View
+            android:id="@+id/circle_bottom"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:padding="8dp"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/circle_line_bottom"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="6dp"/>
+
+        <TextView
+            android:id="@+id/content_header"
+            android:layout_toRightOf="@+id/circle_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Today"
+            android:textColor="@color/darkestGray"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp" />
+        </RelativeLayout>
+
+</LinearLayout>
